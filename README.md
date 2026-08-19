@@ -1,5 +1,5 @@
 [porto.html](https://github.com/user-attachments/files/30732351/porto.html)
-<!DOCTYPE html>
+
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -1155,40 +1155,6 @@
         <a href="#home" class="scroll-top"><i class="fas fa-chevron-up"></i></a>
     </footer>
 
-</body>
-</html>
-<?php
-$koneksi = mysqli_connect("localhost","root","","aspirasi_sarana1");
-$query = mysqli_query($koneksi,"select*from siswa");
-$siswa = mysqli_fetch_all($query,MYSQLI_ASSOC);
-?>
-<table>
-    <tr>
-        <td>nis</td>
-        <td>kelas</td>
-    </tr>
-    <?php foreach($siswa as $row):?>
-    <tr>
-        <td><?= $row["nis"]?></td>
-        <td><?= $row["kelas"]?></td>
-        <?php endforeach; ?>
-    </tr>
-</table>
-:root {
-            --primary: #6c5ce7;
-            --primary-light: #a29bfe;
-            --primary-dark: #5140ed;
-            --purple-bg: #f3f0ff;
-            --card-bg: #ffffff;
-            --text-main: #2d3436;
-            --text-muted: #636e72;
-            --border-color: #e2e8f0;
-            --radius-lg: 16px;
-            --radius-md: 10px;
-            --radius-sm: 6px;
-            --shadow: 0 10px 30px rgba(108, 92, 231, 0.08);
-            --shadow-sm: 0 4px 12px rgba(0,0,0,0.05);
-        }
 
         * {
             margin: 0;
@@ -1896,31 +1862,3 @@ $siswa = mysqli_fetch_all($query,MYSQLI_ASSOC);
                 grid-template-columns: 1fr;
             }
         }
-<?php
-$nama ="adul & fuad";
-$umur ="90000";
-$kelas ="XII RPL 1";
-$hobi ="belajar (kalo niat)";
-$nama_pacar ="justina xie";
-$nama_ortu ="prabowo(papah) dan teddy(ayah)";
-$nama_jaspren ="milda & floryn";
-?>
-
-
-
-<ul>
-    <h3>nama</h3>
-<li><?=$nama?></li>
-    <h3>umur</h3>  
-<li><?=$umur?></li>
-    <h3>kelas</h3>
-<li><?=$kelas?></li>
-    <h3>hobi</h3>
-<li><?=$hobi?></li>
-    <h3>nama pacar</h3>
-<li><?=$nama_pacar?></li>
-    <h3>nama ortu</h3>
-<li><?=$nama_ortu?></li>
-    <h3>nama jaspren</h3>
-<li><?=$nama_jaspren?></li>
-</ul>
